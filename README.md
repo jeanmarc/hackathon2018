@@ -1,7 +1,6 @@
 # hackathon2018
 
-
-=== Sandbox details
+## Sandbox details
 
 
 Neo4j Browser: https://10-0-1-251-33369.neo4jsandbox.com/
@@ -16,8 +15,9 @@ HTTP Port: 33369
 Bolt Port: 33368
 
 
-=== connecting with CLI
+## connecting with CLI
 
+```
 $ neo4j-client -u hackathon -P bolt://34.201.164.142:33368
 The authenticity of host '34.201.164.142:33368' could not be established.
 TLS certificate fingerprint is 5ac491094964cf61d9f61be39f610468a39fdd845b7b0381e78346a584d6572cac297755e0f27055b0d776d30b9e2bc1c0fd11312344a4e52f9f2385510f20f0.
@@ -57,3 +57,4 @@ neo4j> MATCH (n1)-[r]->(n2) RETURN r, n1, n2 LIMIT 25                           
 | [:CONNECTS{}]                                                              | (:Interface{ip:"10.1.1.191"})                                              | (:Interface{ip:"10.1.1.254"})                                              |
 +----------------------------------------------------------------------------+----------------------------------------------------------------------------+----------------------------------------------------------------------------+
 neo4j> 
+```
